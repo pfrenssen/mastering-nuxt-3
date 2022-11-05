@@ -1,0 +1,14 @@
+services:
+  nuxt:
+    build:
+      context: .
+    image: mastering_nuxt_3
+    container_name: mastering_nuxt_3
+    command: yarn run dev
+    environment:
+      HOST: "0.0.0.0"
+    volumes:
+      - .:/app
+      - /app/node_modules
+    ports:
+      - "3000:3000"

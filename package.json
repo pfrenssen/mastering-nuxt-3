@@ -2,7 +2,7 @@
   "private": true,
   "scripts": {
     "build": "nuxt build",
-    "dev": "nuxt dev",
+    "dev": "rm -rf /tmp/nitro/ && nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview"
   },
@@ -11,6 +11,6 @@
     "@tailwindcss/typography": "^0.5.4",
     "@vueuse/core": "^9.3.1",
     "@vueuse/nuxt": "^9.3.1",
-    "nuxt": "3.0.0-rc.12"
+    "nuxt": "3.0.0-rc.13"
   }
 }
